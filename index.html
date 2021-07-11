@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./dist/styles.css">
+    <meta property="og:title" content="Качественный ремонт инструментов и техники в Краснодаре">
+    <meta property="og:site_name" content="Первый Сервисный Центр">
+    <meta property="og:url" content="https://первый-сервис.рф">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:description" content="Ищете где отремонтировать технику? Мы осуществляем качественный ремонт(электроинструмент, бензоинструмент, садовая техника) в Краснодаре на выгодных условиях">
+    <meta name="description" content="Ищете где отремонтировать технику? Мы осуществляем качественный ремонт(электроинструмент, бензоинструмент, садовая техника) в Краснодаре на выгодных условиях">
+    <title>Первый Сервисный Центр</title>
+</head>
+<body>
+<div id="main" class="bg-blue-50 text-gray-700 relative">
+
+    <!--  HEADER  -->
+    <header class="z-60 relative bg-blue-50">
+        <div class="h-screen bg-center bg-cover bg-no-repeat filter blur-sm" style="background-image:url('./src/img/hero-bg.jpg')"></div>
+        <div class="absolute top-0 z-20 w-full h-full">
+            <div class="container px-4 lg:px-10 flex flex-col justify-evenly h-full">
+                <div class="flex flex-col items-center mb-6">
+                    <h1 class="text-white text-center font-black text-2xl lg:text-3xl drop-shadow-2xl mb-5">Первый Сервисный Центр</h1>
+                    <div class="flex flex-col md:flex-row justify-center text-center text-blue-50 uppercase font-semibold pb-3 md:border-b-2 border-solid border-blue-50 max-w-max mx-auto mb-20 md:mb-40">
+                        <div class="mb-2 md:mb-0 md:mr-3">
+                            <div data-anchor-id="services" data-position="" class="scrollToElement hover:text-blue-200 cursor-pointer">
+                                Услуги
+                            </div>
+                        </div>
+                        <div class="mb-2 md:mb-0 md:mr-3">
+                            <div data-anchor-id="price" data-position="" class="scrollToElement hover:text-blue-200 cursor-pointer">
+                                Цены
+                            </div>
+                        </div>
+                        <div class="mb-2 md:mb-0 md:mr-3">
+                            <div data-anchor-id="reviews" data-position="" class="scrollToElement hover:text-blue-200 cursor-pointer">
+                                Отзывы
+                            </div>
+                        </div>
+                        <div>
+                            <div data-anchor-id="contacts" data-position="" class="scrollToElement hover:text-blue-200 cursor-pointer">
+                                Контакты
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h2 data-anchor-id="services" data-position="" class="scrollToElement text-xl lg:text-2xl font-semibold text-blue-50 mb-3">
+                        Ремонтируем вашу технику!
+                    </h2>
+                    <div data-anchor-id="services" data-position="" class="scrollToElement mx-auto max-w-max text-blue-50">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 cursor-pointer hover:text-blue-200 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute top-8 right-8 bg-blue-900 bg-opacity-70 text-white text-right hidden lg:flex flex-col p-4 rounded z-20 text-sm">
+<!--            <a href="#" class="flex items-center justify-end mb-2">-->
+<!--                8 800 700 66 77-->
+<!--                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">-->
+<!--                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />-->
+<!--                </svg>-->
+<!--            </a>-->
+<!--            <a href="#" class="flex items-center justify-end mb-2">-->
+<!--                What's App-->
+<!--                <svg width="14" height="16" class="h-4 w-4 ml-3" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path d="M11.9031 3.03437C10.5937 1.72187 8.85 1 6.99687 1C3.17187 1 0.059375 4.1125 0.059375 7.9375C0.059375 9.15937 0.378125 10.3531 0.984375 11.4062L0 15L3.67812 14.0344C4.69062 14.5875 5.83125 14.8781 6.99375 14.8781H6.99687C10.8187 14.8781 14 11.7656 14 7.94063C14 6.0875 13.2125 4.34687 11.9031 3.03437ZM6.99687 13.7094C5.95937 13.7094 4.94375 13.4312 4.05937 12.9062L3.85 12.7812L1.66875 13.3531L2.25 11.225L2.1125 11.0063C1.53437 10.0875 1.23125 9.02813 1.23125 7.9375C1.23125 4.75938 3.81875 2.17188 7 2.17188C8.54062 2.17188 9.9875 2.77187 11.075 3.8625C12.1625 4.95312 12.8313 6.4 12.8281 7.94063C12.8281 11.1219 10.175 13.7094 6.99687 13.7094ZM10.1594 9.39062C9.9875 9.30313 9.13438 8.88437 8.975 8.82812C8.81563 8.76875 8.7 8.74062 8.58438 8.91562C8.46875 9.09062 8.1375 9.47813 8.03438 9.59688C7.93438 9.7125 7.83125 9.72812 7.65938 9.64062C6.64063 9.13125 5.97188 8.73125 5.3 7.57812C5.12188 7.27187 5.47812 7.29375 5.80937 6.63125C5.86562 6.51562 5.8375 6.41562 5.79375 6.32812C5.75 6.24063 5.40313 5.3875 5.25938 5.04063C5.11875 4.70313 4.975 4.75 4.86875 4.74375C4.76875 4.7375 4.65312 4.7375 4.5375 4.7375C4.42187 4.7375 4.23437 4.78125 4.075 4.95312C3.91562 5.12812 3.46875 5.54688 3.46875 6.4C3.46875 7.25313 4.09063 8.07813 4.175 8.19375C4.2625 8.30938 5.39687 10.0594 7.1375 10.8125C8.2375 11.2875 8.66875 11.3281 9.21875 11.2469C9.55312 11.1969 10.2437 10.8281 10.3875 10.4219C10.5312 10.0156 10.5313 9.66875 10.4875 9.59688C10.4469 9.51875 10.3313 9.475 10.1594 9.39062Z" fill="white"/>-->
+<!--                </svg>-->
+<!--            </a>-->
+            <a href="mailto:краснодар@первый-сервис.рф"  class="flex items-center justify-end">
+                краснодар@первый-сервис.рф
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+            </a>
+<!--            <a href="#" class="flex items-center justify-end mb-2">-->
+<!--                Krasnodar, street Test, 46-->
+<!--                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">-->
+<!--                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />-->
+<!--                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />-->
+<!--                </svg>-->
+<!--            </a>-->
+        </div>
+    </header>
+
+    <!--  TOPBAR  -->
+    <section id="topbar" class="fixed top-0 w-full bg-blue-900 bg-opacity-70 z-50 py-3 shadow">
+        <div class="container">
+            <div class="flex justify-between items-center w-full text-gray-50">
+                <div id="openMenuBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="open h-6 md:h-8 w-6 md:w-8 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="hidden close h-6 md:h-8 w-6 md:w-8 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <div class="flex">
+<!--                    <a href="#" class="flex items-center justify-center h-8 w-8 mr-5 text-green-500 bg-white rounded-full p-1">-->
+<!--                        <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
+<!--                            <path d="M16.8 5.7C14.4 2 9.49999 0.9 5.69999 3.2C1.99999 5.5 0.799993 10.5 3.19999 14.2L3.39999 14.5L2.59999 17.5L5.59999 16.7L5.89999 16.9C7.19999 17.6 8.59999 18 9.99999 18C11.5 18 13 17.6 14.3 16.8C18 14.4 19.1 9.5 16.8 5.7V5.7ZM14.7 13.4C14.3 14 13.8 14.4 13.1 14.5C12.7 14.5 12.2 14.7 10.2 13.9C8.49999 13.1 7.09999 11.8 6.09999 10.3C5.49999 9.6 5.19999 8.7 5.09999 7.8C5.09999 7 5.39999 6.3 5.89999 5.8C6.09999 5.6 6.29999 5.5 6.49999 5.5H6.99999C7.19999 5.5 7.39999 5.5 7.49999 5.9C7.69999 6.4 8.19999 7.6 8.19999 7.7C8.29999 7.8 8.29999 8 8.19999 8.1C8.29999 8.3 8.19999 8.5 8.09999 8.6C7.99999 8.7 7.89999 8.9 7.79999 9C7.59999 9.1 7.49999 9.3 7.59999 9.5C7.99999 10.1 8.49999 10.7 8.99999 11.2C9.59999 11.7 10.2 12.1 10.9 12.4C11.1 12.5 11.3 12.5 11.4 12.3C11.5 12.1 12 11.6 12.2 11.4C12.4 11.2 12.5 11.2 12.7 11.3L14.3 12.1C14.5 12.2 14.7 12.3 14.8 12.4C14.9 12.7 14.9 13.1 14.7 13.4V13.4Z" fill="currentColor"/>-->
+<!--                        </svg>-->
+<!--                    </a>-->
+<!--                    <a href="#" class="flex items-center justify-center h-8 w-8 mr-5 text-blue-800 bg-white rounded-full p-1">-->
+<!--                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">-->
+<!--                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />-->
+<!--                        </svg>-->
+<!--                    </a>-->
+                    <a href="mailto:краснодар@первый-сервис.рф" class="flex items-center justify-center h-8 w-8 text-blue-800 bg-white rounded-full p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  SIDEBAR MENU   -->
+    <section id="mainMenu" class="hidden fixed left-0 top-0 w-full h-full z-40 bg-gray-700 bg-opacity-30">
+        <div id="mainSidebar" class="w-60 h-full overflow-auto pb-10 pt-32 flex flex-col px-2 text-blue-900 bg-blue-200 relative">
+            <p class="font-bold text-xl leading-tight text-center mb-4">Первый<br />Сервисный<br />Центр</p>
+            <div data-anchor-id="services" data-position="" class="scrollToElement mainMenuNavLink flex w-28 mx-auto  items-center text-lg cursor-pointer mb-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Услуги
+            </div>
+            <div data-anchor-id="price" data-position="" class="scrollToElement mainMenuNavLink flex w-28 mx-auto  items-center text-lg cursor-pointer mb-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                Цены
+            </div>
+            <div data-anchor-id="reviews" data-position="" class="scrollToElement mainMenuNavLink flex w-28 mx-auto  items-center text-lg cursor-pointer mb-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                Отзывы
+            </div>
+            <div data-anchor-id="contacts" data-position="" class="scrollToElement mainMenuNavLink flex w-28 mx-auto  items-center text-lg cursor-pointer mb-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                Контакты
+            </div>
+        </div>
+    </section>
+
+    <!--    OUR SERVICES    -->
+    <div id="services" class="container max-w-screen-sm mx-auto pt-20">
+        <h3 class="text-center px-3 text-3xl font-bold mb-10">Наши услуги</h3>
+        <div class="mb-2">
+            <p class="mb-2">
+                Ваш инструмент в надежных руках. Мы отремонтируем его в соответствии с установленными сроками.
+            </p>
+            <p class="font-semibold mb-2">
+                Ремонтируем технику качественно в Краснодаре на выгодных условиях
+            </p>
+            <p>
+                Оборудование и инструменты требуют периодического осмотра и обслуживания. Мы рады предложить вам
+                обслуживание техники на высоком уровне в нашем сервисном центре
+            </p>
+        </div>
+        <div class="flex flex-wrap md:flex-nowrap mb-0 md:mb-4">
+            <div class="h-32 mb-4 md:mb-0 w-full md:w-1/2 flex items-center font-semibold md:text-lg rounded bg-blue-200 py-8 px-2 md:mr-2 cursor-pointer shadow relative group">
+                <div class="relative text-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mr-6 relative z-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <div class="absolute top-0 right-2 h-10 w-10 bg-blue-100 rounded-full"></div>
+                </div>
+                <p class="relative z-20 pr-3">Ремонт за 5 дней</p>
+                <div class="group-hover:opacity-100 opacity-0 transition-opacity absolute top-0 right-0 left-0 bottom-0 rounded bg-blue-200 z-30 p-2 text-sm font-medium overflow-auto">
+                    Если вам нужно срочно отремонтировать инструмент, воспользуйтесь уникальной услугой ремонта за 5 дней.<br />
+                    <span class="text-blue-400">*</span> В этом случае цена может отличаться.
+                    <div data-anchor-id="price" data-position=""
+                         class="scrollToElement cursor-pointer block text-blue-500 hover:underline mt-3 max-w-max">
+                        Посмотреть прайс
+                    </div>
+                </div>
+            </div>
+            <div class="h-32 mb-4 md:mb-0 w-full md:w-1/2 flex items-center font-semibold md:text-lg rounded bg-blue-200 py-8 px-2 md:ml-2 cursor-pointer shadow relative group">
+                <div class="relative text-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mr-6 relative z-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <div class="absolute top-0 right-2 h-10 w-10 bg-blue-100 rounded-full"></div>
+                </div>
+                <p class="relative z-20 pr-3">Срочный ремонт</p>
+                <div class="group-hover:opacity-100 opacity-0 transition-opacity absolute top-0 right-0 left-0 bottom-0 rounded bg-blue-200 z-30 p-2 text-sm font-medium overflow-auto">
+                    Если работа встала из-за сломанного инструмента, обратитесь к нам за срочным ремонтом. Мы отремонтируем его за 4 часа.
+                    <div data-anchor-id="price" data-position=""
+                         class="scrollToElement cursor-pointer block text-blue-500 hover:underline mt-3 max-w-max">
+                        Посмотреть прайс
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-wrap md:flex-nowrap mb-0 md:mb-4">
+            <div class="h-32 mb-4 md:mb-0 w-full md:w-1/2 flex items-center font-semibold md:text-lg rounded bg-blue-200 py-8 px-2 md:mr-2 cursor-pointer shadow relative group">
+                <div class="relative text-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mr-6 relative z-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <div class="absolute top-0 right-2 h-10 w-10 bg-blue-100 rounded-full"></div>
+                </div>
+                <p class="relative z-20 pr-3">Техническое обслуживание</p>
+                <div class="group-hover:opacity-100 opacity-0 transition-opacity absolute top-0 right-0 left-0 bottom-0 rounded bg-blue-200 z-30 p-2 text-sm font-medium overflow-auto">
+                    Если вы хотите продлить срок службы оборудования с мощным электродвигателем или двигателем внутреннего сгорания, за плановым техобслуживанием обращайтесь к нам.
+                    <div data-anchor-id="price" data-position=""
+                         class="scrollToElement cursor-pointer block text-blue-500 hover:underline mt-3 max-w-max">
+                        Посмотреть прайс
+                    </div>
+                </div>
+            </div>
+            <div class="h-32 mb-4 md:mb-0 w-full md:w-1/2 flex items-center font-semibold md:text-lg rounded bg-blue-200 py-8 px-2 md:ml-2 cursor-pointer shadow relative group">
+                <div class="relative text-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mr-6 relative z-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                    </svg>
+                    <div class="absolute top-0 right-2 h-10 w-10 bg-blue-100 rounded-full"></div>
+                </div>
+                <p class="relative z-20 pr-3">Предпродажная подготовка</p>
+                <div class="group-hover:opacity-100 opacity-0 transition-opacity absolute top-0 right-0 left-0 bottom-0 rounded bg-blue-200 z-30 p-2 text-sm font-medium overflow-auto">
+                    Также вы можете заказать предпродажную подготовку. Это сэкономит ваше время, и вы сможете сразу начать работать.
+                    <div data-anchor-id="price" data-position=""
+                         class="scrollToElement cursor-pointer block text-blue-500 hover:underline mt-3 max-w-max">
+                        Посмотреть прайс
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="showRulesBtn text-blue-500 hover:underline cursor-pointer">Ознамиться с правилами работы сервисного центра</div>
+    </div>
+
+    <!--   TOOLS TYPE   -->
+    <div class="container max-w-screen-sm mx-auto pt-20">
+        <h3 class="text-center px-3 text-3xl font-bold mb-10">Какие инструменты мы ремонтируем?</h3>
+        <div class="flex flex-col mb-2">
+            <div class="w-full flex flex-col items-center mb-5">
+                <div class="flex w-full flex-col items-center text-lg font-semibold bg-green-100 rounded shadow px-3 py-5">
+                    <div class="mb-3">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-10 w-10 text-blue-500"
+                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="currentColor" stroke="currentColor">
+                            <g>
+                                <g>
+                                    <g>
+                                        <path d="M21.333,437.333c0,17.643,14.379,32,32,32H224c17.643,0,32-14.357,32-32v-74.667H21.333V437.333z"/>
+                                        <path d="M501.333,106.667h-78.72l-12.48-24.981C404.672,70.784,393.685,64,381.504,64h-49.088l-36.075-12.011
+                                            c-18.517-6.187-37.803-9.323-57.344-9.323H32c-17.621,0-32,14.357-32,32V160c0,17.643,14.379,32,32,32h51.563L64.768,314.069
+                                            l-36.331,27.264h219.072l-65.045-27.883l7.232-47.061c0.789,0.171,1.557,0.277,2.325,0.277c4.779,0,9.131-3.221,10.325-8.085
+                                            l10.667-42.667c1.429-5.717-2.048-11.499-7.765-12.928c-2.027-0.512-4.032-0.235-5.867,0.384L201.152,192h37.824
+                                            c19.541,0,38.827-3.136,57.344-9.323l36.075-12.011h49.088c12.203,0,23.168-6.784,28.629-17.685L422.592,128h78.741
+                                            c5.888,0,10.667-4.779,10.667-10.667S507.221,106.667,501.333,106.667z M117.333,149.333h-64
+                                            c-5.888,0-10.667-4.779-10.667-10.667S47.445,128,53.333,128h64c5.888,0,10.667,4.779,10.667,10.667
+                                            S123.221,149.333,117.333,149.333z M117.333,106.667h-64c-5.888,0-10.667-4.779-10.667-10.667s4.779-10.667,10.667-10.667h64
+                                            C123.221,85.333,128,90.112,128,96S123.221,106.667,117.333,106.667z M341.333,138.667c0,5.888-4.779,10.667-10.667,10.667
+                                            S320,144.555,320,138.667V96c0-5.888,4.779-10.667,10.667-10.667S341.333,90.112,341.333,96V138.667z"/>
+                                    </g>
+                                </g>
+                                                    </g><g>
+                        </g><g>
+                        </g><g>
+                        </g><g>
+                        </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                        </svg>
+                    </div>
+                    <p>Электроинструмент</p>
+                </div>
+            </div>
+            <div class="w-full flex flex-col items-center mb-5">
+                <div class="flex w-full flex-col items-center text-lg font-semibold bg-green-100 rounded shadow px-3 py-5">
+                    <div class="mb-3">
+                        <svg class="h-10 w-10 text-blue-500" fill="currentColor" stroke="currentColor" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="Chainsaw"><g id="Glyph"><path d="m505 61.212h-16.141a65.6 65.6 0 0 0 -9.4-16.362l9.22-9.219a8 8 0 0 0 -11.315-11.314l-9.219 9.219a65.618 65.618 0 0 0 -16.361-9.394v-16.142a8 8 0 0 0 -16 0v12.041a66.257 66.257 0 0 0 -44.7 10.253l-10.65-10.654a8 8 0 0 0 -11.315 11.313l9.678 9.678-29.447 29.448-9.767-9.766a8 8 0 0 0 -11.314 11.313l9.767 9.767-29.291 29.29-9.766-9.766a8 8 0 0 0 -11.315 11.313l9.767 9.77-29.29 29.291-9.767-9.767a8 8 0 0 0 -11.314 11.313l9.767 9.768-29.291 29.29-9.766-9.767a8 8 0 0 0 -11.315 11.313l9.767 9.768-29.29 29.29-9.766-9.767a8 8 0 0 0 -11.314 11.314l9.766 9.767s-35.651 35.717-35.946 36.167l-16.522 24.78-39.713-39.712c-6.949-7.079-18.967 3.8-11.314 11.313l41.977 41.976-15.344 23.014-22.173-22.173a8.059 8.059 0 0 0 -12.313 1.222l-53.189 79.779a72.118 72.118 0 0 0 8.986 90.755c26.933 26.926 75.533 28.741 102.023-.324l11.792-13.186 100.406-105.141 34.9-34.9 9.767 9.766a8 8 0 0 0 11.314-11.313l-9.767-9.767 29.29-29.29 9.767 9.766a8 8 0 0 0 11.314-11.314l-9.767-9.766 29.29-29.291 9.767 9.767a8 8 0 1 0 11.314-11.314l-9.767-9.767 29.29-29.291 9.767 9.766a8 8 0 1 0 11.314-11.313l-9.767-9.767 29.29-29.29 9.767 9.766a8 8 0 0 0 11.314-11.313l-9.767-9.767 29.45-29.451 9.678 9.677a8 8 0 0 0 11.314-11.313l-10.654-10.654a66.259 66.259 0 0 0 10.253-44.7h12.041a8 8 0 0 0 0-16zm-432.831 276.18 17.536 17.535-12.885 19.327-17.535-17.536zm38.148 142.38c-21.449 21.531-57.629 21.156-78.936-.152a56.076 56.076 0 0 1 -6.987-70.566l25.839-38.754 17.536 17.536-10.355 15.527a8 8 0 0 0 .987 10.083l58.599 58.854zm15.447-65.117a9.694 9.694 0 1 1 0-13.709 9.694 9.694 0 0 1 0 13.709zm320.977-309.663-234.261 234.26-38.733-38.732 234.261-234.261a27.409 27.409 0 0 1 38.732 0 27.409 27.409 0 0 1 0 38.732z"/></g></g></svg>
+                    </div>
+                    <p>Бензоинструмент</p>
+                </div>
+            </div>
+            <div class="w-full flex flex-col items-center mb-5">
+                <div class="flex w-full flex-col items-center text-lg font-semibold bg-green-100 rounded shadow px-3 py-5">
+                    <div class="mb-3">
+                        <svg class="h-10 w-10 text-blue-500" fill="currentColor" stroke="currentColor" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><circle cx="145.101" cy="438.551" r="59.148"/><ellipse cx="469.43" cy="455.129" rx="42.57" ry="42.57" transform="matrix(.996 -.088 .088 .996 -38.339 43.209)"/><path d="m485.51 384.362c-4.33-31.16-28.94-57.06-61.69-63.47l-241.219-47.09c-34.825-6.804-66.7 19.003-66.7 52.56v27.96c9.15-3.19 18.98-4.92 29.2-4.92 49.16 0 89.15 39.99 89.15 89.15 0 5.66-.53 11.21-1.55 16.58h164.159c0-40.02 32.55-72.57 72.57-72.57 5.52 0 10.91.62 16.08 1.8zm-149.979 10.77h-49.92c-8.29 0-15-6.72-15-15s6.71-15 15-15h49.92c8.29 0 15 6.72 15 15s-6.71 15-15 15z"/><path d="m413.39 288.292v-3.03c0-23.45-17.28-43.9-41.07-48.6l-50.443-10.001v-42.81h27.817c8.284 0 15-6.716 15-15s-6.716-15-15-15h-85.635c-8.284 0-15 6.716-15 15s6.716 15 15 15h27.818v36.863l-57.157-11.332c-11.44-2.27-23.21.51-32.26 7.64-8.62 6.78-13.74 16.67-14.22 27.32.04.01.07.01.11.02z"/><path d="m11.532 43.902c28.26 6.72 51.18 28.13 59.81 55.89l49.68 159.04c8.577-6.123 18.176-10.528 27.37-13l-48.41-154.97c-11.76-37.81-42.99-66.99-81.51-76.15-8.07-1.92-16.15 3.06-18.06 11.12-1.92 8.06 3.06 16.15 11.12 18.07z"/><path d="m85.901 326.362c0-16.96 5.23-33.26 14.77-46.97h-85.67c-8.28 0-15 6.72-15 15v54.11c0 4.49 2.01 8.74 5.47 11.59l56.44 46.4c5.22-13.5 13.63-25.42 24.31-34.81-.433-3.656-.32-1.973-.32-45.32z"/></g></svg>
+                    </div>
+                    <p>Садовая техника</p>
+                </div>
+            </div>
+        </div>
+        <div class="mb-4">
+            Мы специализируемся на оказании качественных услуг в области ремонта техники в указанных выше категориях, для чего выработали оптимальные алгоритмы взаимодействия с клиентами. Мастера сервисного центра выполняют необходимые ремонтные работы в сервисном центре.
+        </div>
+    </div>
+
+    <!--  PRICE  -->
+    <section id="price">
+        <div class="container max-w-screen-sm mx-auto pt-20">
+            <h3 class="text-center px-3 text-3xl font-bold mb-5">Цены</h3>
+            <p class="mb-5 text-center">
+                Чтобы посмотреть цены, нажмите кнопку ниже "Посмотреть цены" и выберите интересующую вас категорию услуг
+            </p>
+            <div class="flex justify-center mb-4">
+                <button class="bg-blue-300 font-semibold md:text-lg text-gray-50 shadow rounded-full px-5 md:px-8 py-2 md:py-3">
+                    Посмотреть цены
+                </button>
+            </div>
+            <div id="priceListContainer" class="max-h-0 transition-all overflow-hidden px-2">
+                <div class="text-center mb-3">
+                    <span class="font-semibold text-lg">Выберите технику/инструменты</span>
+                </div>
+                <div class="md:text-lg">
+                    <div data-filename="motocultivator-2-takta.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        мотокультиватор с 2-тактным двигателем
+                    </div>
+                    <div data-filename="motocultivator-4-takta.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        мотокультиватор с 4-тактным двигателем
+                    </div>
+                    <div data-filename="motoblok.json"
+                         class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        мотоблок
+                    </div>
+                    <div data-filename="motoblok-dvigatel.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        двигатель мотоблока
+                    </div>
+                    <div data-filename="motoblock-neva.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        мотоблок Нева
+                    </div>
+                    <div data-filename="motoblok-mb-1.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        мотоблок МБ-1
+                    </div>
+                    <div data-filename="motoblock-kaskad.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        мотоблок Каскад
+                    </div>
+                    <div data-filename="motoblock-mtz.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        мотоблок МТЗ
+                    </div>
+                    <div data-filename="motoblock-luch.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        мотоблок Луч
+                    </div>
+                    <div data-filename="motoblock-salut.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        мотоблок Салют
+                    </div>
+                    <div data-filename="motoblock-agro.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        мотоблок Агро
+                    </div>
+                    <div data-filename="electokultivator.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        электрокультиватор
+                    </div>
+                    <div data-filename="traktor.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        трактор
+                    </div>
+                    <div data-filename="raider.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        райдер
+                    </div>
+                    <div data-filename="snegouborshik.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        снегоуборщик
+                    </div>
+                    <div data-filename="benzin-gazonokosilka-4-takta.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        бензиновая газонокосилка с 4-тактным двигателем, воздуходувка, аэратор
+                    </div>
+                    <div data-filename="frontalnaya-kosilka.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        фронтальная косилка, кусторез роторного типа, сенозаготовительная машина
+                    </div>
+                    <div data-filename="benzopila.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        бензопила
+                    </div>
+                    <div data-filename="electropila.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        электропила
+                    </div>
+                    <div data-filename="generator.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        генератор
+                    </div>
+                    <div data-filename="benzobur.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        бензобур
+                    </div>
+                    <div data-filename="vozduhoduvka-raspilitel.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        воздуходувка и распылитель
+                    </div>
+                    <div data-filename="teplovaya-pushka.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        тепловая пушка
+                    </div>
+                    <div data-filename="motopompa.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        мотопомпа
+                    </div>
+                    <div data-filename="moika-visokogo-davlenia.json"
+                         class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        мойка высокого давления
+                    </div>
+                    <div data-filename="electricheskii-trimmer-nojnici.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        электрический триммер, электрические ножницы
+                    </div>
+                    <div data-filename="benzokos-visotorez.json"
+                            class="openPriceItem block rounded-lg shadow mb-2 bg-gray-100 py-2 px-3 cursor-pointer">
+                        бензокос, высоторез, бензоножницы
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  HOW TO ORDER  -->
+    <section>
+        <div class="container max-w-screen-sm mx-auto pt-12">
+            <h3 class="text-center px-3 text-3xl font-bold mb-10 md:mb-16">Как сдать инструмент в ремонт?</h3>
+            <div>
+                <div class="flex w-full mb-12 md:mb-16">
+                    <div class="relative mr-7 md:mr-16">
+                        <div class="absolute -top-4 md:-top-8 -right-5 md:-right-10 h-8 md:h-16 w-8 md:w-16 text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-16 w-8 md:w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                            </svg>
+                        </div>
+                        <div class="relative z-20 rounded-full bg-blue-400 text-lg md:text-2xl text-gray-50 font-semibold flex items-center justify-center h-8 md:h-12 w-8 md:w-12">1</div>
+                    </div>
+                    <div>
+                        <p class="text-lg font-semibold mb-3">Подготовьтесь заранее</p>
+                        <ul class="list-inside list-disc">
+                            <li>Убедитесь, что гарантийный талон заполнен.</li>
+                            <li>
+                                Ознакомьтесь с <span class="showRulesBtn cursor-pointer text-blue-500 hover:underline">правилами работы сервисного центра</span>.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex w-full mb-12 md:mb-16">
+                    <div class="relative mr-7 md:mr-16">
+                        <div class="absolute -top-4 md:-top-8 -right-5 md:-right-10 h-8 md:h-16 w-8 md:w-16 text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-16 w-8 md:w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                        </div>
+                        <div class="relative z-20 rounded-full bg-blue-400 text-lg md:text-2xl text-gray-50 font-semibold flex items-center justify-center h-8 md:h-12 w-8 md:w-12">2</div>
+                    </div>
+                    <div>
+                        <p class="text-lg font-semibold mb-3">Возьмите с собой</p>
+                        <ul class="list-inside list-disc">
+                            <li>гарантийный талон</li>
+                            <li>полную комплектацию инструмента</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex w-full mb-12 md:mb-16">
+                    <div class="relative mr-7 md:mr-16">
+                        <div class="absolute -top-4 md:-top-8 -right-5 md:-right-10 h-8 md:h-16 w-8 md:w-16 text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-16 w-8 md:w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <div class="relative z-20 rounded-full bg-blue-400 text-lg md:text-2xl text-gray-50 font-semibold flex items-center justify-center h-8 md:h-12 w-8 md:w-12">3</div>
+                    </div>
+                    <div>
+                        <p class="text-lg font-semibold mb-3">Сдайте инструмент</p>
+                        <p>
+                            в пункт приема инструмента
+                        </p>
+                    </div>
+                </div>
+                <div class="flex w-full">
+                    <div class="relative mr-7 md:mr-16">
+                        <div class="absolute -top-4 md:-top-8 -right-5 md:-right-10 h-8 md:h-16 w-8 md:w-16 text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-16 w-8 md:w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div class="relative z-20 rounded-full bg-blue-400 text-lg md:text-2xl text-gray-50 font-semibold flex items-center justify-center h-8 md:h-12 w-8 md:w-12">4</div>
+                    </div>
+                    <div>
+                        <p class="text-lg font-semibold mb-3">Получите инструмент</p>
+                        <p>
+                            Обратитесь туда, куда вы его сдавали. Предъявите паспорт и акт приема инструмента.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  REVIEWS  -->
+    <section id="reviews" class="pt-20">
+        <div class="container">
+            <h3 class="text-center px-3 text-3xl font-bold mb-5 md:mb-8">Отзывы</h3>
+            <div class="w-full lg:px-24 relative">
+                <div class="glide" id="reviewsGlide">
+                    <div class="glide__track mb-3" data-glide-el="track">
+                        <div class="glide__slides">
+                            <div class="glide__slide py-5">
+                                <div class="w-full md:w-2/3 lg:w-1/2 mx-auto flex flex-col items-center text-center bg-white p-5 rounded-xl">
+                                    <img src="./src/img/reviews/1.jpg" class="w-24 h-24 block rounded-full mb-5" alt="фото клиента 1">
+                                    <p class="text-gray-500 leading-relaxed mb-5">
+                                        Не оставят без внимания, грамотно проконсультируют. Если необходимо выполнять
+                                        профилактику или ремонт обращусь сюда. Делают бесплатно или не дорого в зависимости
+                                        от степени сложности.
+                                    </p>
+                                    <span class="text-gray-700 font-semibold text-sm uppercase">
+                                        Михаил Некрасов
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="glide__slide py-5">
+                                <div class="w-full md:w-2/3 lg:w-1/2 mx-auto flex flex-col items-center text-center bg-white p-5 rounded-xl">
+                                    <img src="./src/img/reviews/2.jpg" class="w-24 h-24 block rounded-full mb-5" alt="фото клиента 2">
+                                    <p class="text-gray-500 leading-relaxed mb-5">
+                                        Из ближайших сервисов ко мне оказался именно этот, причина обращения - поломка дрели.
+                                        <br />Два дня и все было готово. Видно, что мастера хорошей квалификации и с
+                                        реальным опытом.
+                                    </p>
+                                    <span class="text-gray-700 font-semibold text-sm uppercase">
+                                        Максим Полукаров
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="glide__slide py-5">
+                                <div class="w-full md:w-2/3 lg:w-1/2 mx-auto flex flex-col items-center text-center bg-white p-5 rounded-xl">
+                                    <img src="./src/img/reviews/3.jpg" class="w-24 h-24 block rounded-full mb-5" alt="фото клиента 3">
+                                    <p class="text-gray-500 leading-relaxed mb-5">
+                                        Посоветовали сделать телефон в этом сервисе. Сделали очень качественно, всё работает.
+                                        Сотрудники очень хорошие, всё подробно рассказывают.
+                                        Буду теперь ходить только в этот сервис. Всем советую)))
+                                    </p>
+                                    <span class="text-gray-700 font-semibold text-sm uppercase">
+                                        Сергей Егоров
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="glide__slide py-5">
+                                <div class="w-full md:w-2/3 lg:w-1/2 mx-auto flex flex-col items-center text-center bg-white p-5 rounded-xl">
+                                    <img src="./src/img/reviews/4.jpg" class="w-24 h-24 block rounded-full mb-5" alt="фото клиента 4">
+                                    <p class="text-gray-500 leading-relaxed mb-5">
+                                        Идеальный сервис! Очень помогли в трудном вопросе. Однозначно рекомендую! Пример,
+                                        как вообще нужно вести предпринимательскую деятельность, независимо от области,
+                                        в которой работаешь! Желаю процветания!
+                                    </p>
+                                    <span class="text-gray-700 font-semibold text-sm uppercase">
+                                        Стас Неганов
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="glide__slide py-5">
+                                <div class="w-full md:w-2/3 lg:w-1/2 mx-auto flex flex-col items-center text-center bg-white p-5 rounded-xl">
+                                    <img src="./src/img/reviews/5.jpg" class="w-24 h-24 block rounded-full mb-5" alt="фото клиента 5">
+                                    <p class="text-gray-500 leading-relaxed mb-5">
+                                        Отличный сервис по приемлемым ценам. Очень понравился персонал.
+                                        Ребята заботятся о клиентах. Всегда помогут и подскажут.
+                                    </p>
+                                    <span class="text-gray-700 font-semibold text-sm uppercase">
+                                        Николай Миронов
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glide__bullets flex justify-center" data-glide-el="controls[nav]">
+                        <button class="glide__bullet bg-blue-200 w-3 h-3 rounded-full mr-3" data-glide-dir="=0"></button>
+                        <button class="glide__bullet bg-blue-200 w-3 h-3 rounded-full mr-3" data-glide-dir="=1"></button>
+                        <button class="glide__bullet bg-blue-200 w-3 h-3 rounded-full mr-3" data-glide-dir="=2"></button>
+                        <button class="glide__bullet bg-blue-200 w-3 h-3 rounded-full mr-3" data-glide-dir="=3"></button>
+                        <button class="glide__bullet bg-blue-200 w-3 h-3 rounded-full" data-glide-dir="=4"></button>
+                    </div>
+                    <div class="glide__arrows flex w-full justify-between absolute top-1/2 -translate-y-1/2" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left -ml-3 bg-blue-500 bg-opacity-60 text-gray-50 p-2 flex justify-center items-center rounded-full mr-5" data-glide-dir="<">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        <button class="glide__arrow glide__arrow--right -mr-3 bg-blue-500 bg-opacity-60 text-gray-50 p-2 flex justify-center items-center rounded-full" data-glide-dir=">">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  FAQ  -->
+    <section class="pt-20 faq">
+        <div class="container max-w-screen-sm mx-auto">
+            <h3 class="text-center px-3 text-3xl font-bold mb-10">Часто задаваемые вопросы</h3>
+            <div class="faqItem bg-blue-100 flex flex-wrap items-center w-full shadow rounded-lg p-3 mb-3">
+                <div class="faqItemOpen flex items-center cursor-pointer">
+                    <div class="w-8 h-8 mr-4 flex justify-center items-center bg-blue-500 text-gray-50 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                    </div>
+                    <div class="flex-1 text-gray-700 md:text-lg">
+                        <p>Что мне понадобится для обращения по гарантийному обслуживанию?</p>
+                    </div>
+                </div>
+                <div class="faqItemBody mt-0 max-h-0 transition-all ml-12 w-full text-sm font-light overflow-hidden">
+                    <p class="mb-2">
+                        Вам понадобится фирменный гарантийный талон. При получении заказа убедитесь, что продавец его
+                        заполнил. Этот документ необходим при предъявлении претензий по качеству и гарантийном обслуживании.
+                        Поэтому его нужно сохранять на протяжении всего срока гарантии.
+                    </p>
+                    <p>
+                        Если вы будете сдавать инструмент
+                        в авторизованный сервисный центр для ремонта, вместе с гарантийным талоном предоставьте полную
+                        комплектацию, рабочие сменные приспособления и элементы их крепления (шины, пильные диски, звездочки,
+                        болты, гайки, фланцы крепления инструмента, цепи, ножи, триммерные головки, форсунки).
+                    </p>
+                </div>
+            </div>
+            <div class="faqItem bg-blue-100 flex flex-wrap items-center w-full shadow rounded-lg p-3 mb-3">
+                <div class="faqItemOpen flex items-center cursor-pointer">
+                    <div class="w-8 h-8 mr-4 flex justify-center items-center bg-blue-500 text-gray-50 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                    </div>
+                    <div class="flex-1 text-gray-700 md:text-lg">
+                        <p>В каких случаях прекращается действие гарантии?</p>
+                    </div>
+                </div>
+                <div class="faqItemBody mt-0 max-h-0 transition-all ml-12 w-full text-sm font-light overflow-hidden">
+                    <p class="mb-3">
+                        Основные условия прекращения гарантии:
+                    </p>
+                    <ul class="list-inside list-disc mb-3">
+                        <li class="mb-2">удален или изменен серийный номер;</li>
+                        <li class="mb-2">несоответствие данных на инструменте гарантийному талону;</li>
+                        <li class="mb-2">повреждения, вызванные механическим, химическим или температурным воздействием;</li>
+                        <li class="mb-2">засорение систем охлаждения и полостей;</li>
+                        <li class="mb-2">неисправности из-за перегрузки или неправильной эксплуатации;</li>
+                        <li class="mb-2">поломки из-за применения неподходящей или изношенной оснастки;</li>
+                        <li class="mb-2">нарушение требований по составу и качеству топливной смеси;</li>
+                        <li class="mb-2">подключение электроинструмента к сети с нестабильным напряжением;</li>
+                        <li class="mb-2">следы вскрытия и самостоятельного ремонта изделия.</li>
+                    </ul>
+                    <p>
+                        Подробные условия вы можете найти в своем гарантийном талоне.
+                    </p>
+                </div>
+            </div>
+            <div class="faqItem bg-blue-100 flex flex-wrap items-center w-full shadow rounded-lg p-3 mb-3">
+                <div class="faqItemOpen flex items-center cursor-pointer">
+                    <div class="w-8 h-8 mr-4 flex justify-center items-center bg-blue-500 text-gray-50 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                    </div>
+                    <div class="flex-1 text-gray-700 md:text-lg">
+                        <p>Если я отдам инструмент в ремонт, как долго мне ждать?</p>
+                    </div>
+                </div>
+                <div class="faqItemBody mt-0 max-h-0 transition-all ml-12 w-full text-sm font-light overflow-hidden">
+                    <p>
+                        Сроки ремонта зависят от типа инструмента, характера поломки и наличия запасных частей.
+                    </p>
+                </div>
+            </div>
+            <div class="faqItem bg-blue-100 flex flex-wrap items-center w-full shadow rounded-lg p-3 mb-3">
+                <div class="faqItemOpen flex items-center cursor-pointer">
+                    <div class="w-8 h-8 mr-4 flex justify-center items-center bg-blue-500 text-gray-50 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                    </div>
+                    <div class="flex-1 text-gray-700 md:text-lg">
+                        <p>Как я могу продлить срок службы инструмента?</p>
+                    </div>
+                </div>
+                <div class="faqItemBody mt-0 max-h-0 transition-all ml-12 w-full text-sm font-light overflow-hidden">
+                    <p>
+                        Используйте инструмент строго по назначению и в соответствии с рекомендациями производителя.
+                        Вы можете предупредить преждевременный износ с помощью своевременного технического обслуживания
+                        (ТО). Услуга ТО включает в себя чистку, промывку, смазку. Осуществляется сервисным центром за
+                        счет потребителя, так как не является гарантийным обязательством производителя. Сотрудники нашего
+                        сервисного центра имеют все необходимые знания и квалификацию для качественного обслуживания.
+                    </p>
+                </div>
+            </div>
+            <div class="faqItem bg-blue-100 flex flex-wrap items-center w-full shadow rounded-lg p-3 mb-3">
+                <div class="faqItemOpen flex items-center cursor-pointer">
+                    <div class="w-8 h-8 mr-4 flex justify-center items-center bg-blue-500 text-gray-50 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                    </div>
+                    <div class="flex-1 text-gray-700 md:text-lg">
+                        <p>Как я смогу понять, что инструмент неисправен и работать им нельзя?</p>
+                    </div>
+                </div>
+                <div class="faqItemBody mt-0 max-h-0 transition-all ml-12 w-full text-sm font-light overflow-hidden">
+                    <p>
+                        Если вы заметили повышенное искрение, шум, запах гари, сильную вибрацию, неравномерное вращение
+                        или потерю мощности, остановите работу. Не рекомендуется использовать электроинструмент с
+                        признаками механических повреждений сетевой вилки, электрошнура (трещины, сколы, разрывы связок),
+                        а также при видимых повреждениях корпуса. В этих случаях обращайтесь в сервисный центр.
+                    </p>
+                </div>
+            </div>
+            <div class="faqItem bg-blue-100 flex flex-wrap items-center w-full shadow rounded-lg p-3 mb-3">
+                <div class="faqItemOpen flex items-center cursor-pointer">
+                    <div class="w-8 h-8 mr-4 flex justify-center items-center bg-blue-500 text-gray-50 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                    </div>
+                    <div class="flex-1 text-gray-700 md:text-lg">
+                        <p>Что такое диагностика и когда ее проводят?</p>
+                    </div>
+                </div>
+                <div class="faqItemBody mt-0 max-h-0 transition-all ml-12 w-full text-sm font-light overflow-hidden">
+                    <p class="mb-2">
+                        Диагностика помогает выявить неисправности и скрытые дефекты. Если вы обращаетесь к нам за платным
+                        ремонтом, то эта услуга входит в общую стоимость, так как является неотъемлемым этапом.
+                        Важно, чтобы инструмент был чистым. Очистку вам могут выполнить в сервисном центре – эта услуга
+                        оплачивается при сдаче инструмента. Также вы можете провести очистку самостоятельно.
+                    </p>
+                    <p>
+                        По результатам диагностики вы принимаете решение о ремонте (при отказе вы оплачиваете только диагностику).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  CONTACTS  -->
+    <section class="mb-10">
+        <div class="container max-w-screen-sm mx-auto pt-20" id="contacts">
+            <h3 class="text-center px-3 text-3xl font-bold mb-10">Контакты</h3>
+            <div class="w-full rounded-xl shadow-lg bg-blue-100 p-6">
+                <h4 class="font-semibold text-xl mb-4">Пункт приема техники</h4>
+                <nofollow>
+                    <p class="mb-3">
+                        Скоро мы предоставим больше контактной информации, а пока
+                        пишите нам на электронную почту
+                    </p>
+                </nofollow>
+                <div class="text-blue-900">
+<!--                    <a href="#" class="hidden flex items-center mb-3 max-w-max">-->
+<!--                        <div class="w-8">-->
+<!--                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">-->
+<!--                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />-->
+<!--                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />-->
+<!--                            </svg>-->
+<!--                        </div>-->
+<!--                        Краснодар, ул. Ленина, д. 50, подъезд 1, вход со стороны вокзала-->
+<!--                    </a>-->
+<!--                    <a href="#" class="hidden flex items-center mb-3 max-w-max">-->
+<!--                        <div class="w-8">-->
+<!--                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">-->
+<!--                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />-->
+<!--                            </svg>-->
+<!--                        </div>-->
+<!--                        +7 985 999 88 77-->
+<!--                    </a>-->
+<!--                    <a href="#" class="hidden flex items-center mb-3 max-w-max">-->
+<!--                        <div class="w-8">-->
+<!--                            <svg width="14" height="16" class="h-5 w-5 mr-3" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                                <path d="M11.9031 3.03437C10.5937 1.72187 8.85 1 6.99687 1C3.17187 1 0.059375 4.1125 0.059375 7.9375C0.059375 9.15937 0.378125 10.3531 0.984375 11.4062L0 15L3.67812 14.0344C4.69062 14.5875 5.83125 14.8781 6.99375 14.8781H6.99687C10.8187 14.8781 14 11.7656 14 7.94063C14 6.0875 13.2125 4.34687 11.9031 3.03437ZM6.99687 13.7094C5.95937 13.7094 4.94375 13.4312 4.05937 12.9062L3.85 12.7812L1.66875 13.3531L2.25 11.225L2.1125 11.0063C1.53437 10.0875 1.23125 9.02813 1.23125 7.9375C1.23125 4.75938 3.81875 2.17188 7 2.17188C8.54062 2.17188 9.9875 2.77187 11.075 3.8625C12.1625 4.95312 12.8313 6.4 12.8281 7.94063C12.8281 11.1219 10.175 13.7094 6.99687 13.7094ZM10.1594 9.39062C9.9875 9.30313 9.13438 8.88437 8.975 8.82812C8.81563 8.76875 8.7 8.74062 8.58438 8.91562C8.46875 9.09062 8.1375 9.47813 8.03438 9.59688C7.93438 9.7125 7.83125 9.72812 7.65938 9.64062C6.64063 9.13125 5.97188 8.73125 5.3 7.57812C5.12188 7.27187 5.47812 7.29375 5.80937 6.63125C5.86562 6.51562 5.8375 6.41562 5.79375 6.32812C5.75 6.24063 5.40313 5.3875 5.25938 5.04063C5.11875 4.70313 4.975 4.75 4.86875 4.74375C4.76875 4.7375 4.65312 4.7375 4.5375 4.7375C4.42187 4.7375 4.23437 4.78125 4.075 4.95312C3.91562 5.12812 3.46875 5.54688 3.46875 6.4C3.46875 7.25313 4.09063 8.07813 4.175 8.19375C4.2625 8.30938 5.39687 10.0594 7.1375 10.8125C8.2375 11.2875 8.66875 11.3281 9.21875 11.2469C9.55312 11.1969 10.2437 10.8281 10.3875 10.4219C10.5312 10.0156 10.5313 9.66875 10.4875 9.59688C10.4469 9.51875 10.3313 9.475 10.1594 9.39062Z" fill="currentColor"/>-->
+<!--                            </svg>-->
+<!--                        </div>-->
+<!--                        Написать в What's App-->
+<!--                    </a>-->
+                    <a href="mailto:краснодар@первый-сервис.рф" class="flex items-center mb-3 max-w-max">
+                        <div class="w-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        краснодар@первый-сервис.рф
+                    </a>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </section>
+
+    <!--  EPILOG  -->
+    <section class="mb-16">
+        <div class="container max-w-screen-sm mx-auto pt-8">
+            <h3 class="text-center px-3 text-3xl font-bold mb-10">Ремонтируйте и обслуживайте технику на выгодных условиях</h3>
+            <p class="mb-2">
+                Отремонтировать, обслужить и подготовить к продаже инструмент можно у нас, в "Первом Сервисном Центре" - без дополнительных затрат.
+            </p>
+            <p class="mb-2">
+                В нашем прайс-листе вы найдете цены на ремонт/обслуживание мотокультиваторов, мотоблоков, электрокультиваторов,
+                тракторов, райдеров, снегоуборщиков, газонокосилок, бензопил, электропил, генераторов, бензобуров, мотопомп, воздуходувок, распылителей и другой техники.
+            </p>
+            <p class="mb-2">
+                "Первый Сервисный Центр" предоставляет отличные условия для обслуживания и ремонта техники, наши услуги
+                одни из лучших на рынке по соотношению "цена-качество".
+            </p>
+            <p>
+                Гарантия качества и надежности проведения работ по ремонту и обслуживанию, поэтому ваша техника прослужит долго!
+            </p>
+        </div>
+    </section>
+
+    <!--  GO UP BUTTON  -->
+    <div data-anchor-id="" data-position="0"
+         class="scrollToElement fixed z-30 bottom-10 md:bottom-24 right-6 md:right-9 w-8 md:w-12 h-8 md:h-12 bg-blue-700 bg-opacity-60 flex justify-center items-center rounded-full text-gray-50 cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 md:h-9 w-6 md:w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </div>
+
+    <!--  POPUP  -->
+    <div id="priceModal" class="hidden justify-center items-center z-60 fixed top-0 left-0 right-0 bottom-0 bg-gray-700 bg-opacity-70">
+        <div class="h-4/5 w-full container py-4 max-w-screen-sm mx-auto bg-blue-50 md:rounded-lg relative">
+            <div class="absolute h-10 w-10 -top-5 right-1 md:-right-5 rounded-full bg-blue-300 text-gray-50 flex items-center justify-center">
+                <svg id="priceModalCloseBtn" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </div>
+            <div class="overflow-auto max-h-full" id="priceModalBody">
+                <nofollow>
+                    <div id="priceModalTitle" class="text-xl font-bold text-center mb-4">
+                        Загрузка ...
+                    </div>
+                </nofollow>
+                <div id="priceModalInfo" class="hidden text-sm">
+                    <p class="mb-2">
+                        Расценки даны для того, чтобы вы могли самостоятельно рассчитать стоимость ремонта в мастерской
+                    </p>
+                    <p class="mb-2">
+                        Просим учитывать, что цена ремонта может меняться, как в большую, так и в меньшую сторону в
+                        зависимости от объема работ, но в любом случае, после проведения диагностики мастер перезвонит и
+                        расскажет о неисправности и точной стоимости ремонта
+                    </p>
+                    <p class="mb-2">
+                        Также, как вы могли уже заметить в прайс-листе, мы с удовольствием делаем скидки на большой объем работ!
+                    </p>
+                </div>
+                <div id="priceRowsContainer" class="flex flex-col mb-5"></div>
+                <div id="pricePopupNotesContainer" class="text-lg font-semibold mb-4">
+
+                </div>
+                <div id="pricePopupListsContainer"></div>
+                <div id="rulesContainer" class="hidden text-sm">
+                    <h6 class="text-lg font-semibold mb-3">Правила сдачи инструмента</h6>
+                    <ul class="list-decimal list-inside mb-3">
+                        <li class="mb-2">
+                            Для сдачи инструмента в ремонт или на диагностику вам необходимо написать заявление с
+                            указанием возникших недостатков товара.
+                        </li>
+                        <li class="mb-2">
+                            При себе нужно иметь документы:
+                            <ul class="list-inside list-disc ml-2">
+                                <li>для физических лиц и индивидуальных предпринимателей – паспорт и доверенность на представителя (если покупатель не может обратиться лично);</li>
+                                <li>для юридических лиц – паспорт представителя и доверенность на право сдачи товара либо документы, подтверждающие полномочия генерального директора.</li>
+                            </ul>
+                        </li>
+                        <li class="mb-2">
+                            Перед сдачей инструмента очистите его, так как сервисный центр принимает товары только в чистом виде. Иначе необходимо будет оплатить мойку, которая будет включена в стоимость работ как дополнительная услуга.
+                        </li>
+                        <li class="mb-2">
+                            Товар нужно сдавать с полной комплектацией и вместе со всеми сменными приспособлениями.
+                        </li>
+                        <li class="mb-2">
+                            Укажите всю необходимую контактную информацию для получения уведомлений о процессе ремонта или диагностики:
+                            <ul class="list-inside list-disc ml-2">
+                                <li>номер телефона;</li>
+                                <li>адрес электронной почты;</li>
+                                <li>почтовый адрес.</li>
+                            </ul>
+                        </li>
+                        <li class="mb-2">Способ уведомления определяется сервисным центром, поэтому постарайтесь дать все актуальные контакты. Это поможет избежать нарушения сроков уведомления.</li>
+                    </ul>
+                    <h6 class="text-lg font-semibold mb-3">Правила хранения инструмента</h6>
+                    <ul class="list-inside list-decimal mb-3">
+                        <li class="mb-2">По готовности вы получите уведомление о необходимости забрать товар из сервисного центра. Если вы не сможете сделать это незамедлительно, сервисный центр примет товар на хранение в соответствии с главой 47 ГК РФ.</li>
+                        <li class="mb-2">Срок безвозмездного хранения составляет не более 55 дней с момента поступления в сервисный центр. Однако если инструмент не может быть отремонтирован безвозмездно, и вы отказались от платного ремонта, срок хранения составит не более 20 дней.</li>
+                        <li class="mb-2">По истечении указанных сроков сервисный центр вправе потребовать оплату в размере 1% от стоимости товара за каждый день хранения.</li>
+                        <li class="mb-2">Если прошло 100 дней с момента, когда нужно было забрать товар, и при получении вы обнаружили повреждения, недостачу или утрату инструмента, то сервисный центр возместит эту сумму только после оплаты за хранение. Сумма возмещения не может превышать стоимость товара.</li>
+                    </ul>
+                    <h6 class="text-lg font-semibold mb-3">Правила выдачи инструмента</h6>
+                    <ul class="list-decimal list-inside mb-3">
+                        <li class="mb-2">
+                            После диагностики или ремонта товар можно получить в том же месте, куда вы его сдавали.
+                        </li>
+                        <li class="mb-2">
+                            Для получения необходимы документы, которые вы предъявляли при обращении в сервисный центр:
+                            <ul class="list-disc list-inside ml-2">
+                                <li>для физических лиц и индивидуальных предпринимателей – паспорт и доверенность на представителя (если покупатель не может обратиться лично);</li>
+                                <li>для юридических лиц – паспорт представителя и доверенность на право сдачи товара либо документы, подтверждающие полномочия генерального директора.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h6 class="text-lg font-semibold mb-3">Гарантийные обязательства сервисного центра</h6>
+                    <ul class="list-decimal list-inside mb-3">
+                        <li class="mb-2">
+                            При платном ремонте и техническом обслуживании гарантия на работы и замененные запчасти составляет 30 дней. В случае поломки в течение этого срока обратитесь в сервисный центр
+                        </li>
+                        <li class="mb-2">
+                            Если инструмент находится на гарантии, то ее срок продлевается на время ремонта в сервисном центре. Срок хранения не учитывается.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  FOOTER  -->
+    <footer class="bg-gray-700 text-white text-sm">
+        <div class="container max-w-screen-sm mx-auto text-center py-2">
+            <div class="flex justify-center">
+                &copy; "Первый Сервисный Центр", 2021
+            </div>
+        </div>
+    </footer>
+
+    <div itemscope itemtype="https://schema.org/Organization" class="hidden">
+        <meta itemprop="name" content="Первый Сервисный Центр" />
+        <link itemprop="url" href="https://первый-сервис.рф" />
+        <meta itemprop="description" content="Ищете где отремонтировать технику? Мы осуществляем качественный ремонт(электроинструмент, бензоинструмент, садовая техника) в Краснодаре на выгодных условиях" />
+        <meta itemprop="email" content="краснодар@первый-сервис.рф" />
+<!--        <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">-->
+<!--            <meta itemprop="addressLocality" content="Москва, Россия" />-->
+<!--            <meta itemprop="postalCode" content="012345" />-->
+<!--            <meta itemprop="streetAddress" content="Пл. Победы 26Б" />-->
+<!--        </div>-->
+<!--        <meta itemprop="telephone" content="+12-345-678-90-00" />-->
+        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+            <meta itemprop="ratingValue" content="4.8">
+            <meta itemprop="reviewCount" content="47">
+        </div>
+    </div>
+
+    <script src="./dist/vendors-node_modules_glidejs_glide_dist_glide_esm_js-node_modules_axios_index_js-node_modules-1ce152.bundle.js"></script>
+    <script src="./dist/app.bundle.js" async></script>
+</div>
+</body>
+</html>
